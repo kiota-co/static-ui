@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "@/views/Home.vue";
-import About from "@/views/About.vue";
+import AgentDashboard from "@/views/AgentDashboard.vue";
 import FruitsPage from "@/views/FruitsPage.vue";
 import FruitDetails from "@/views/FruitDetails.vue";
 import ErrorPage from "@/views/ErrorPage .vue";
@@ -16,10 +15,10 @@ const routes = [
     component: Onboarding,
   },
   {
-    path: "/about",
-    name: "About",
-    component: About,
-    meta: { requiresAuth: true }, // Example of attaching metadata
+    path: "/agent-dashboard",
+    name: "AgentDashboard",
+    component: AgentDashboard,
+     // Example of attaching metadata
   },
   {
     path: "/fruits",
