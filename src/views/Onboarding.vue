@@ -1,9 +1,15 @@
 <script>
+import EmptyState from '@/components/forms/EmptyState.vue';
 import OrganizationDetails from '@/components/forms/OnboardingForms/OrganizationDetails.vue';
+import PropertyDetails from '@/components/forms/OnboardingForms/PropertyDetails.vue';
+import KYCUnitTableDetails from '@/components/tables/KYCUnitTableDetails.vue';
+
+import OrganizationPaymentSettings from '@/components/forms/Payment/OrganizationPaymentSettings.vue';
+
 export default {
     name: "App",
     components: {
-        OrganizationDetails
+        OrganizationDetails, PropertyDetails, EmptyState, KYCUnitTableDetails, OrganizationPaymentSettings
     },
 };
 </script>
@@ -21,29 +27,37 @@ export default {
 
                 </AccordionTab>
                 <AccordionTab header="Add your property/ies">
-                    <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-                        ab illo inventore veritatis et quasi architecto beatae vitae dicta
-                        sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-                        qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit,
-                        sed quia non numquam eius modi.
-                    </p>
+
+                    <div class=" grid space-y-4">
+                        <EmptyState />
+                        <PropertyDetails />
+
+                        <KYCUnitTableDetails />
+                    </div>
+
+
+
+                    <!-- <UnitDetailsForm /> -->
                 </AccordionTab>
-                <AccordionTab header="Header III">
-                    <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-                        et quas molestias excepturi sint occaecati cupiditate non provident,
-                        similique sunt in culpa qui officia deserunt mollitia animi, id est
-                        laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-                        distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
-                        cumque nihil impedit quo minus.
-                    </p>
+                <AccordionTab header="Configure your Payment">
+                    <OrganizationPaymentSettings />
                 </AccordionTab>
             </Accordion>
         </div>
+
+        <div>
+            <div class="my-4">
+                <button type="button"
+                    class="inline-flex items-center rounded-md bg-indigo-600 px-3 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    <!-- <svg class="-ml-0.5 mr-1.5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                </svg> -->
+                    Save your profile
+                </button>
+            </div>
+        </div>
+
 
 
 

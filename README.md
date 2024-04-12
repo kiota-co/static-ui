@@ -1,4 +1,4 @@
-# vue-kiota-ts
+# kiota-hq
 
 ## Project setup
 ```

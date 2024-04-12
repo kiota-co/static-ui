@@ -20,11 +20,11 @@ const formData = ref({
                     <p>Organization Details</p>
                 </div>
                 <div>
-                    <div class="grid gap-4 grid-cols-2">
+                    <div class="grid gap-4 sm:grid-cols-2">
                         <div>
                             <label for="phone" class="font-bold block mb-2">Company/Business Name</label>
                             <span class="relative w-full">
-                                <InputText v-model="formData.firstName" placeholder="Enter your first name"
+                                <InputText v-model="formData.firstName" placeholder="Eg: Paradise Ventures Inc"
                                     class="w-full" />
                             </span>
                         </div>
@@ -32,16 +32,15 @@ const formData = ref({
                         <div>
                             <span class="relative">
                                 <label for="phone" class="font-bold block mb-2">Number of Properties</label>
-                                <InputText v-model="formData.lastName" placeholder="Enter your last name"
-                                    class="w-full" />
+                                <InputText v-model="formData.lastName" placeholder="100" class="w-full" />
                             </span>
                         </div>
 
                         <div>
                             <span class="relative">
                                 <label for="phone" class="font-bold block mb-2">Locations</label>
-                                <InputText v-model="formData.email" placeholder="Enter your email address"
-                                    class="w-full" />
+                                <InputText v-model="formData.email"
+                                    placeholder="Eg: Waiyaki way, Lower Kabete, Kikuyu, Ruaka" class="w-full" />
                             </span>
                         </div>
                     </div>
@@ -52,11 +51,11 @@ const formData = ref({
                         <p>Contact Persons Details</p>
                     </div>
 
-                    <div class="grid gap-4 grid-cols-2">
+                    <div class="grid gap-4 sm:grid-cols-2">
                         <div>
                             <label for="phone" class="font-bold block mb-2">First Name</label>
                             <span class="relative w-full">
-                                <InputText v-model="formData.phone" placeholder="Enter your phone number"
+                                <InputText v-model="formData.phone" placeholder="Enter your First Name"
                                     class="w-full" />
                             </span>
                         </div>
@@ -64,8 +63,7 @@ const formData = ref({
                         <div>
                             <label for="phone" class="font-bold block mb-2">Last Name</label>
                             <span class="relative w-full">
-                                <InputText v-model="formData.phone" placeholder="Enter your phone number"
-                                    class="w-full" />
+                                <InputText v-model="formData.phone" placeholder="Enter your Last Name" class="w-full" />
                             </span>
                         </div>
 
@@ -80,7 +78,7 @@ const formData = ref({
                         <div>
                             <label for="phone" class="font-bold block mb-2">Email Address</label>
                             <span class="relative w-full">
-                                <InputText v-model="formData.phone" placeholder="Enter your phone number"
+                                <InputText v-model="formData.email" placeholder="Enter your email address"
                                     class="w-full" />
                             </span>
                         </div>

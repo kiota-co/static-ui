@@ -16,7 +16,7 @@ const formData = ref({
 
     <Card class="">
         <template #content>
-            <div class="grid gap-6 grid-cols-2">
+            <div class="grid gap-6 sm:grid-cols-2">
                 <div>
                     <label for="phone" class="font-bold block mb-2">First Name</label>
                     <span class="relative w-full">
