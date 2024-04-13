@@ -17,7 +17,7 @@ const formData = ref({
         <template #content>
             <div class="space-y-4">
                 <div>
-                    <p>Properties Details</p>
+                    <p>Property Details</p>
                 </div>
                 <div>
                     <div class="grid gap-4 sm:grid-cols-2">

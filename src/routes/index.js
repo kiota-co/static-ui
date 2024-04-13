@@ -4,6 +4,7 @@ import FruitsPage from "@/views/FruitsPage.vue";
 import FruitDetails from "@/views/FruitDetails.vue";
 import ErrorPage from "@/views/ErrorPage .vue";
 import Onboarding from "@/views/Onboarding.vue";
+import LandScapeProperties from "@/views/PropertyProfile/LandScapeProperties.vue";
 const routes = [
   {
     path: "/:catchAll(.*)",
@@ -20,6 +21,15 @@ const routes = [
     component: AgentDashboard,
      // Example of attaching metadata
   },
+
+  {
+    path: "/landscape-properties",
+    name: "LandScapeProperties",
+    component: LandScapeProperties,
+     // Example of attaching metadata
+  },
+
+  
   {
     path: "/fruits",
     name: "Fruits",
