@@ -5,11 +5,12 @@ import PropertyDetails from '@/components/forms/OnboardingForms/PropertyDetails.
 import KYCUnitTableDetails from '@/components/tables/KYCUnitTableDetails.vue';
 
 import OrganizationPaymentSettings from '@/components/forms/Payment/OrganizationPaymentSettings.vue';
+import GreetingsComponent from '@/components/GreetingsComponent.vue';
 
 export default {
     name: "App",
     components: {
-        OrganizationDetails, PropertyDetails, EmptyState, KYCUnitTableDetails, OrganizationPaymentSettings
+        OrganizationDetails, PropertyDetails, EmptyState, KYCUnitTableDetails, OrganizationPaymentSettings, GreetingsComponent
     },
 
 };
@@ -17,6 +18,9 @@ export default {
 
 
 <template>
+
+    <GreetingsComponent />
+
     <div>
         <h1 class="text-xl  text-gray-900 mb-10">Lets help you get started</h1>
 

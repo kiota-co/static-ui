@@ -1,14 +1,12 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import "./index.css";
-
+import router from "./router";
 // import Home from "./views/Home.vue";
-
+import Lara from "./presets/lara";
 import PrimeVue from "primevue/config";
 import "primeicons/primeicons.css";
+import "./index.css";
 
-import Lara from "./presets/lara";
-import router from "./routes";
 
 // Components
 import Panel from "primevue/panel";
