@@ -67,7 +67,7 @@
                                             </td>
                                             <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{
                                                 property.units
-                                            }}</td>
+                                                }}</td>
                                             <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{
                                                 property.locality }}</td>
                                             <td
@@ -99,7 +99,7 @@ export default {
                 { propertyName: 'Land Scape Properties', units: 25, locality: 'Lower Kabete' },
                 { propertyName: 'Water Creek', units: '20', locality: 'Lower Kabete' },
                 { propertyName: 'ABC Lofts', units: '15', locality: 'Kikuyu Kabete' },
-                { propertyName: 'Eageles Nests', units: '40', locality: 'Lower Kabete' },
+                { propertyName: 'Eagles Nest', units: '40', locality: 'Lower Kabete' },
                 { propertyName: 'Land Scape Properties', units: '25', locality: 'Ruaka' },
 
             ],

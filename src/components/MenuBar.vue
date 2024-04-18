@@ -37,11 +37,17 @@
 
 <script setup>
 import { ref } from "vue";
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const items = ref([
   {
     label: "Home",
     icon: "pi pi-home",
+    command: () => {
+      router.push('/');
+    }
   },
 
   {
@@ -61,6 +67,9 @@ const items = ref([
             label: "Agent Only",
             icon: "pi pi-palette",
             badge: 2,
+            command: () => {
+              router.push('/agent-dashboard');
+            }
           },
           {
             label: "Agent + Landlord",
@@ -82,13 +91,19 @@ const items = ref([
   {
     label: "Properties",
     icon: "pi pi-star",
+    command: () => {
+      router.push('/properties');
+    }
   },
   {
-    label: "Billing",
+    label: "Invoices",
     icon: "pi pi-envelope",
+    command: () => {
+      router.push('/all-invoices');
+    }
   },
   {
-    label: "Reports",
+    label: "Settings",
     icon: "pi pi-envelope",
   },
 ]);

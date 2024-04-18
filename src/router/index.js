@@ -12,7 +12,9 @@ import FruitDetails from "@/views/FruitDetails.vue";
 import ErrorPage from "@/views/ErrorPage .vue";
 import Onboarding from "@/views/Onboarding.vue";
 import LandScapeProperties from "@/views/PropertyProfile/LandScapeProperties.vue";
-
+import Invoices from "@/components/invoices/Invoices.vue";
+import InvoicePage from "@/components/invoices/InvoicePage.vue";
+import AllProperties from "@/views/PropertyProfile/AllProperties.vue";
 
 const routes = [
 
@@ -45,8 +47,32 @@ const routes = [
     component: LandScapeProperties,
      // Example of attaching metadata
   },
+  // invoice-page
+  {
+    path: "/all-invoices",
+    name: "Invoices",
+    component: Invoices,
+     // Example of attaching metadata
+  },
 
-  
+  {
+    path: "/invoice-page",
+    name: "InvoicePage",
+    component: InvoicePage,
+     // Example of attaching metadata
+  },
+
+
+  // properties
+
+  {
+    path: "/properties",
+    name: "AllProperties",
+    component: AllProperties,
+     // Example of attaching metadata
+  },
+
+
   {
     path: "/fruits",
     name: "Fruits",

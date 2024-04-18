@@ -15,7 +15,7 @@ import Accordion from "primevue/accordion";
 import AccordionTab from "primevue/accordiontab";
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
-
+import Breadcrumb from 'primevue/breadcrumb';
 
 const app = createApp(App);
 app.component("Panel", Panel);
@@ -24,6 +24,9 @@ app.component("Accordion", Accordion);
 app.component("AccordionTab", AccordionTab);
 app.component("DataTable", DataTable);
 app.component("Column", Column);
+app.component("Column", Column);
+app.component("Breadcrumb", Breadcrumb);
+
 app.use(PrimeVue, { unstyled: true, pt: Lara });
 app.use(router)
 app.mount("#app");

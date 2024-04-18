@@ -4,6 +4,10 @@
     <div>
 
         <PropertyHeaderComponent />
+
+        <BreadCrumbComponent />
+
+
         <div class="py-10">
             <main class="pb-8">
                 <div class="mx-auto ">
@@ -107,8 +111,8 @@
                                                                 {{
                                                                     unit.rentStatus }}</td>
                                                             <td
-                                                                class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6 lg:pr-8">
-                                                                <a @click="goToLandScapeProperties"
+                                                                class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6 lg:pr-8 cursor-pointer">
+                                                                <a @click="goToInvoice"
                                                                     class="text-indigo-600 hover:text-indigo-900">View
                                                                     Invoice</a>
                                                             </td>
@@ -130,10 +134,11 @@
 
 </template>
 <script>
+import BreadCrumbComponent from '@/components/BreadCrumbComponent.vue';
 import PropertyHeaderComponent from '@/components/PropertyHeaderComponent.vue';
 
 export default {
-    components: { PropertyHeaderComponent },
+    components: { PropertyHeaderComponent, BreadCrumbComponent },
     data() {
         return {
             units: [
@@ -160,8 +165,8 @@ export default {
             this.properties.push(newProperty);
         },
 
-        goToLandScapeProperties() {
-            this.$router.push("/landscape-properties");
+        goToInvoice() {
+            this.$router.push("/invoice-page");
         },
     },
 };

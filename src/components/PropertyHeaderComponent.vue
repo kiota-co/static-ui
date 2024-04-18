@@ -1,7 +1,13 @@
 <template>
     <div class="py-10">
         <header>
-            <div class="px-4 sm:px-6 lg:px-8  md:justify-between md:items-center sm:flex">
+
+
+            <div class="md:justify-between md:items-center sm:flex">
+
+
+
+
 
                 <div class="pt-1.5">
 
@@ -23,12 +29,15 @@
             </div>
         </header>
 
+
+
     </div>
 </template>
 
 <script>
 export default {
     name: "App",
+
 
     methods: {
         goToAgentDashboard() {

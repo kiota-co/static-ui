@@ -67,7 +67,7 @@ const people = [
     { propertyName: 'Land Scape Properties', unitCount: '25', locationArea: 'Lower Kabete' },
     { propertyName: 'Water Creek', unitCount: '20', locationArea: 'Lower Kabete' },
     { propertyName: 'ABC Lofts', unitCount: '15', locationArea: 'Kikuyu Kabete' },
-    { propertyName: 'Eageles Nests', unitCount: '40', locationArea: 'Lower Kabete' },
+    { propertyName: 'Eagles Nest', unitCount: '40', locationArea: 'Lower Kabete' },
     { propertyName: 'Land Scape Properties', unitCount: '25', locationArea: 'Ruaka' },
 
 ]
